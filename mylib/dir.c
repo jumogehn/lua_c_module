@@ -4,6 +4,7 @@
 
 #include <dirent.h>
 #include <errno.h>
+#include <string.h>
 
 static int l_dir(lua_State *L) {
   DIR *dir;
