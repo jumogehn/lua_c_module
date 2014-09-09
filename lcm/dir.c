@@ -33,13 +33,13 @@ static int l_dir(lua_State *L) {
   return 1;
 }
 
-static const struct luaL_Reg mylib [] = {
+static const struct luaL_Reg fs[] = {
   {"dir", l_dir},
   {NULL, NULL}
 };
 
-int luaopen_mylib (lua_State *L) {
-  luaL_register(L, "mylib", mylib);
+int luaopen_lcm_fs (lua_State *L) {
+  luaL_register(L, "fs", fs);
   return 1;
 }
 
